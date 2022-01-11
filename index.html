@@ -4,17 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="img/techis-logo.png">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
       <link rel="stylesheet" href="./style.css" />
       <title>Portfolio</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <!-- Container, adjust the width for each device. -->
       <div class="container">
+        <!-- navbar-brand, for your company, product or project name. -->
         <a class="navbar-brand title-icon" href="#"
           ><span class="font-primary">P</span>ortfolio</a
         >
+
+        <!-- navbar-toggler, for use with our collapse plugin and other navigation toggling behaviors. -->
         <button
           class="navbar-toggler"
           type="button"
@@ -23,8 +32,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- collapse, .navbar-collpse, for grouping and hiding navbar contents by a parent breakpoint. -->
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto mb-2">
+          <!-- navbar-nav, for a full height and lightweight navigation. -->
+          <!-- ms-auto, for pushing items to the left. -->
+          <!-- mb-2, for a margin bottom for 2 levels. -->
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link font-black" href="#about">About</a>
             </li>
@@ -35,6 +50,7 @@
         </div>
       </div>
     </nav>
+   
       <div id="about">
         <h2><span class="font-primary">A</span>bout</h2>
         <img src="img/Myself.jpeg">
@@ -48,7 +64,7 @@
         <div class="icons">
           <!-- <a href="#"><i clas="bi bi-github ms-3"></i></a> -->
           <a href="https://www.linkedin.com/in/edet-nkereuwem-087280219/"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/nkereuwem/Portfolio"><i class="bi bi-github ms-3"></i></a>
+          <a href="https://github.com/nkereuwem"><i class="bi bi-github ms-3"></i></a>
           <!-- <a href="#"><i class="bi bi-linkedin"></i></a> -->
         </div>
       </div>
@@ -58,58 +74,89 @@
    <div id="project">
         <h2><span class="font-primary">P</span>rojects</h2>
         <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-4">
-                <img src="img/project-twitter.png" alt="Twitter Clone">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Twitter Clone</h5>
-                  <p class="card-text">This is a twitter based twitter Clone project.</p>
-                  <p class="card-text"><small class="text-muted">
-                      test Login Account <br>
-                      Email : test@gmail.com<br>
-                      password : 1234
-                  </small></p>
-                  <a href="https://edetsportfolio.herokuapp.com/#project" target="_blank" class="btn btn-secondary">Website Link</a>
-                  <a href="https://github.com/nkereuwem/Portfolio" target="_blank" class="btn btn-secondary">Github Link</a>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-md-4">
+        <video class="project-video" autoplay muted controls >
+        <source src="video/touristguide.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Ethiopian Tourist Guide</h5>
+            <p class="card-text">
+            <strong>Project Description:</strong>This is a website for whom is looking forward to visit Ethiopia which provides assistance, information on cultural, historical and contemporary heritage to people on organized sightseeing and individual clients at educational establishments, religious and historical sites such as; museums, and at various venues of tourist attraction resorts.  <br> <br>
+            <strong>Skills used:</strong>FrontEnd: React & Redux / BackEnd: Django</p>
+            <p class="card-text">
+            <a href="https://frontend-30.herokuapp.com/" target="_blank" class="btn btn-secondary">Website</a>
+            <a href="https://github.com/nkereuwem/touristguide-ed" target="_blank" class="btn btn-secondary">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="row">
+        <div class="col-md-4">
+        <video class="project-video" autoplay muted controls >
+        <source src="video/sport.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">SuperSports</h5>
+            <p class="card-text">
+            <strong>Project Description:</strong>This is a great web app for all the sports buffs who are always looking for indoor or outdoor sports utilities and gear that they can’t find in regular stores. Have a new adventure lined up or competition, don’t break any sweat, just cruise through our app! <br> <br>
+            <strong>Skills used:</strong>FrontEnd: React & Redux / BackEnd: Django</p>
+            <p class="card-text">
+                <strong>Login ID:</strong><br />Email : Edet@edet.com<br />
+                password : edet123
+            </p>
+            <a href="https://frontend-edet.herokuapp.com/" target="_blank" class="btn btn-secondary">Website</a>
+            <a href="https://github.com/nkereuwem/SuperSports-Ed" target="_blank" class="btn btn-secondary">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="card mb-3">
+        <div class="row">
+          <div class="col-md-4">
+            <video class="project-video" autoplay muted controls>
+              <source src="video/twitterclone.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Twitter Clone</h5>
+              <p class="card-text">
+                This is twitter based project made using Django.
+              </p>
+              <p class="card-text">
+                <strong>Project Description:</strong>This is the app where you can share your thoughts using tweets.</br> 
+                <strong>Skills used:</strong>Html/ CSS/Bootstrap/Javascript/Django/Cloudinary/Heroku</p>
+              </p>
+              <a
+                href="https://twitter-clone-akshay.herokuapp.com/"
+                target="_blank"
+                class="btn btn-secondary"
+                >Website Link</a
+              >
+              <a
+                href="https://github.com/nkereuwem/twitter-clone"
+                target="_blank"
+                class="btn btn-secondary"
+                >GitHub Link</a
+              >
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="img/project-netflix.png"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Netflix Clone</h5>
-                  <p class="card-text">
-                    This is a Netflix based project About, Login and
-                    Recommendation.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Test login account <br />
-                      Email : User@email.com <br />
-                      Password : 123456</small>
-                  </p>
-                  <a href="https://edetsportfolio.herokuapp.com/#project" target="_blank" class="btn btn-secondary"
-                    >Website Link</a
-                  >
-                  <a href="https://github.com/nkereuwem/Portfolio" target="_blank" class="btn btn-secondary"
-                    >Github Link</a
-                  >
-                </div>
-              </div>
-            </div>
         </div>
+      </div>
     </div>
-           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js%22 " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
